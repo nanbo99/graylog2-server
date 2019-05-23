@@ -93,7 +93,9 @@ class SourceCodeEditor extends React.Component {
     if (mode === 'pipeline') {
       const pipelineRulesMode = new PipelineRulesMode();
 
-      this.reactAce.editor.getSession().setMode(pipelineRulesMode);
+      pipelineRulesMode.then((pipelineMode) => {
+        this.reactAce.editor.getSession().setMode(pipelineMode);
+      });
     }
   }
 
