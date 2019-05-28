@@ -68,16 +68,14 @@ const webpackConfig = {
         ],
       },
       { test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader'], exclude: /bootstrap\.less$/ },
-      {
- test: /\.css$/,
+      { test: /\.css$/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: getCssLoaderOptions(),
           },
-        ]
-},
+        ] },
     ],
   },
   resolve: {
