@@ -15,7 +15,7 @@ const builtinConstants = 'all|either|during|when|then|end';
 
 let builtinFunctions = '';
 
-class PipelineHighlightRules extends window.ace.acequire('ace/mode/text_highlight_rules').TextHighlightRules {
+export class PipelineHighlightRules extends window.ace.acequire('ace/mode/text_highlight_rules').TextHighlightRules {
   constructor() {
     super();
 
